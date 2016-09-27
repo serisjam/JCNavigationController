@@ -33,10 +33,10 @@
 }
 
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
-    if (self = [super init]) {
+    JCWrapViewController *wrapViewController = [JCWrapViewController wrapViewControllerWithRootController:rootViewController];
+    
+    if (self = [super initWithRootViewController:wrapViewController]) {
         rootViewController.jcNavigationController = self;
-        JCWrapViewController *wrapViewController = [JCWrapViewController wrapViewControllerWithRootController:rootViewController];
-        self.viewControllers = @[wrapViewController];
     }
     
     return self;
