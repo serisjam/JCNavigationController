@@ -69,6 +69,17 @@
 }
 */
 
+#pragma mark public method
+
+- (void)removeAtIndex:(NSInteger)index {
+    if (index < 1 || index > [self.viewControllers count]) {
+        return ;
+    }
+    NSMutableArray *viewControllers = [NSMutableArray arrayWithArray:self.viewControllers];
+    [viewControllers removeObjectAtIndex:index];
+    self.viewControllers = viewControllers;
+}
+
 #pragma mark - UINavigationControllerDelegate
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {

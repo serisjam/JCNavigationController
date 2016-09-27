@@ -50,6 +50,7 @@
     viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backItemImage style:UIBarButtonItemStylePlain target:self action:@selector(didTapBackButton)];
     
     [self.navigationController pushViewController:[JCWrapViewController wrapViewControllerWithRootController:viewController] animated:animated];
+    viewController.jcNavigationController = (JCNavigationViewController *)self.navigationController;
 }
 
 - (void)didTapBackButton {
