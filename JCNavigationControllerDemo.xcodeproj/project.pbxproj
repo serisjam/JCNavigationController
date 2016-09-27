@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39F45CB91D9A23DC00642536 /* JCNavigationControllerImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F45CB01D9A23DC00642536 /* JCNavigationControllerImage.xcassets */; };
+		39F45CBA1D9A23DC00642536 /* JCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */; };
+		39F45CBB1D9A23DC00642536 /* JCWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB41D9A23DC00642536 /* JCWrapNavigationController.m */; };
+		39F45CBC1D9A23DC00642536 /* JCWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB61D9A23DC00642536 /* JCWrapViewController.m */; };
+		39F45CBD1D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB81D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.m */; };
 		EBDFEA2A1CAA575800B2CB2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA291CAA575800B2CB2C /* main.m */; };
 		EBDFEA2D1CAA575800B2CB2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA2C1CAA575800B2CB2C /* AppDelegate.m */; };
 		EBDFEA301CAA575800B2CB2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA2F1CAA575800B2CB2C /* ViewController.m */; };
@@ -15,14 +20,18 @@
 		EBDFEA381CAA575800B2CB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDFEA361CAA575800B2CB2C /* LaunchScreen.storyboard */; };
 		EBDFEA461CAA57E000B2CB2C /* JCPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA431CAA57E000B2CB2C /* JCPageViewController.m */; };
 		EBDFEA471CAA57E000B2CB2C /* JCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA451CAA57E000B2CB2C /* JCViewController.m */; };
-		EBDFEA521CAA57FA00B2CB2C /* JCNavigationControllerImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDFEA491CAA57FA00B2CB2C /* JCNavigationControllerImage.xcassets */; };
-		EBDFEA531CAA57FA00B2CB2C /* JCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA4B1CAA57FA00B2CB2C /* JCNavigationViewController.m */; };
-		EBDFEA541CAA57FA00B2CB2C /* JCWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA4D1CAA57FA00B2CB2C /* JCWrapNavigationController.m */; };
-		EBDFEA551CAA57FA00B2CB2C /* JCWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA4F1CAA57FA00B2CB2C /* JCWrapViewController.m */; };
-		EBDFEA561CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDFEA511CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39F45CB01D9A23DC00642536 /* JCNavigationControllerImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JCNavigationControllerImage.xcassets; sourceTree = "<group>"; };
+		39F45CB11D9A23DC00642536 /* JCNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationViewController.h; sourceTree = "<group>"; };
+		39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNavigationViewController.m; sourceTree = "<group>"; };
+		39F45CB31D9A23DC00642536 /* JCWrapNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapNavigationController.h; sourceTree = "<group>"; };
+		39F45CB41D9A23DC00642536 /* JCWrapNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWrapNavigationController.m; sourceTree = "<group>"; };
+		39F45CB51D9A23DC00642536 /* JCWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapViewController.h; sourceTree = "<group>"; };
+		39F45CB61D9A23DC00642536 /* JCWrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWrapViewController.m; sourceTree = "<group>"; };
+		39F45CB71D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JCNavigationControllerExtension.h"; sourceTree = "<group>"; };
+		39F45CB81D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JCNavigationControllerExtension.m"; sourceTree = "<group>"; };
 		EBDFEA251CAA575800B2CB2C /* JCNavigationControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCNavigationControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDFEA291CAA575800B2CB2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBDFEA2B1CAA575800B2CB2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,15 +46,6 @@
 		EBDFEA431CAA57E000B2CB2C /* JCPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPageViewController.m; sourceTree = "<group>"; };
 		EBDFEA441CAA57E000B2CB2C /* JCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
 		EBDFEA451CAA57E000B2CB2C /* JCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCViewController.m; sourceTree = "<group>"; };
-		EBDFEA491CAA57FA00B2CB2C /* JCNavigationControllerImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JCNavigationControllerImage.xcassets; sourceTree = "<group>"; };
-		EBDFEA4A1CAA57FA00B2CB2C /* JCNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationViewController.h; sourceTree = "<group>"; };
-		EBDFEA4B1CAA57FA00B2CB2C /* JCNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNavigationViewController.m; sourceTree = "<group>"; };
-		EBDFEA4C1CAA57FA00B2CB2C /* JCWrapNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapNavigationController.h; sourceTree = "<group>"; };
-		EBDFEA4D1CAA57FA00B2CB2C /* JCWrapNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWrapNavigationController.m; sourceTree = "<group>"; };
-		EBDFEA4E1CAA57FA00B2CB2C /* JCWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapViewController.h; sourceTree = "<group>"; };
-		EBDFEA4F1CAA57FA00B2CB2C /* JCWrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWrapViewController.m; sourceTree = "<group>"; };
-		EBDFEA501CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JCNavigationControllerExtension.h"; sourceTree = "<group>"; };
-		EBDFEA511CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JCNavigationControllerExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +59,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F45CAF1D9A23DC00642536 /* JCNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				39F45CB01D9A23DC00642536 /* JCNavigationControllerImage.xcassets */,
+				39F45CB11D9A23DC00642536 /* JCNavigationViewController.h */,
+				39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */,
+				39F45CB31D9A23DC00642536 /* JCWrapNavigationController.h */,
+				39F45CB41D9A23DC00642536 /* JCWrapNavigationController.m */,
+				39F45CB51D9A23DC00642536 /* JCWrapViewController.h */,
+				39F45CB61D9A23DC00642536 /* JCWrapViewController.m */,
+				39F45CB71D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.h */,
+				39F45CB81D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.m */,
+			);
+			path = JCNavigationController;
+			sourceTree = "<group>";
+		};
 		EBDFEA1C1CAA575800B2CB2C = {
 			isa = PBXGroup;
 			children = (
+				39F45CAF1D9A23DC00642536 /* JCNavigationController */,
 				EBDFEA271CAA575800B2CB2C /* JCNavigationControllerDemo */,
 				EBDFEA261CAA575800B2CB2C /* Products */,
 			);
@@ -78,7 +95,6 @@
 		EBDFEA271CAA575800B2CB2C /* JCNavigationControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				EBDFEA481CAA57FA00B2CB2C /* JCNavigationController */,
 				EBDFEA2B1CAA575800B2CB2C /* AppDelegate.h */,
 				EBDFEA2C1CAA575800B2CB2C /* AppDelegate.m */,
 				EBDFEA2E1CAA575800B2CB2C /* ViewController.h */,
@@ -102,22 +118,6 @@
 				EBDFEA291CAA575800B2CB2C /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBDFEA481CAA57FA00B2CB2C /* JCNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				EBDFEA491CAA57FA00B2CB2C /* JCNavigationControllerImage.xcassets */,
-				EBDFEA4A1CAA57FA00B2CB2C /* JCNavigationViewController.h */,
-				EBDFEA4B1CAA57FA00B2CB2C /* JCNavigationViewController.m */,
-				EBDFEA4C1CAA57FA00B2CB2C /* JCWrapNavigationController.h */,
-				EBDFEA4D1CAA57FA00B2CB2C /* JCWrapNavigationController.m */,
-				EBDFEA4E1CAA57FA00B2CB2C /* JCWrapViewController.h */,
-				EBDFEA4F1CAA57FA00B2CB2C /* JCWrapViewController.m */,
-				EBDFEA501CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.h */,
-				EBDFEA511CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.m */,
-			);
-			path = JCNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDFEA521CAA57FA00B2CB2C /* JCNavigationControllerImage.xcassets in Resources */,
+				39F45CB91D9A23DC00642536 /* JCNavigationControllerImage.xcassets in Resources */,
 				EBDFEA381CAA575800B2CB2C /* LaunchScreen.storyboard in Resources */,
 				EBDFEA351CAA575800B2CB2C /* Assets.xcassets in Resources */,
 				EBDFEA331CAA575800B2CB2C /* Main.storyboard in Resources */,
@@ -191,15 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDFEA541CAA57FA00B2CB2C /* JCWrapNavigationController.m in Sources */,
+				39F45CBB1D9A23DC00642536 /* JCWrapNavigationController.m in Sources */,
 				EBDFEA301CAA575800B2CB2C /* ViewController.m in Sources */,
 				EBDFEA471CAA57E000B2CB2C /* JCViewController.m in Sources */,
 				EBDFEA2D1CAA575800B2CB2C /* AppDelegate.m in Sources */,
-				EBDFEA531CAA57FA00B2CB2C /* JCNavigationViewController.m in Sources */,
+				39F45CBA1D9A23DC00642536 /* JCNavigationViewController.m in Sources */,
 				EBDFEA461CAA57E000B2CB2C /* JCPageViewController.m in Sources */,
-				EBDFEA561CAA57FA00B2CB2C /* UIViewController+JCNavigationControllerExtension.m in Sources */,
+				39F45CBD1D9A23DC00642536 /* UIViewController+JCNavigationControllerExtension.m in Sources */,
 				EBDFEA2A1CAA575800B2CB2C /* main.m in Sources */,
-				EBDFEA551CAA57FA00B2CB2C /* JCWrapViewController.m in Sources */,
+				39F45CBC1D9A23DC00642536 /* JCWrapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +346,7 @@
 				EBDFEA3E1CAA575800B2CB2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

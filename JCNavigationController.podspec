@@ -14,8 +14,7 @@ Pod::Spec.new do |s|
   s.summary      = "JCNavigationConroller是一个可以在不同页面自定义NavigationBar样式，而且互相不影响"
 
   s.description  = <<-DESC
-                    支持StroyBoard xib code
-                    不影响原有的导航栏的navigationItem和其他navigationBar的属性,包括设置的barTintColor,backgroundImage等
+                    支持StroyBoard xib code 不影响原有的导航栏的navigationItem和其他navigationBar的属性,包括设置的barTintColor,backgroundImage等
                    DESC
 
   s.homepage     = "https://github.com/SerilesJam/JCNavigationController"
@@ -36,10 +35,11 @@ Pod::Spec.new do |s|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => "http://EXAMPLE/JCNavigationController.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/SerilesJam/JCNavigationController.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.subspec 'JCNavigationControllerDemo/JCNavigationController' do |ss|
+  s.subspec 'JCNavigationController' do |ss|
     ss.source_files  = 'JCNavigationController/*'
+  end
 end
