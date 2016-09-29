@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "JCNavigationController"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "JCNavigationConroller是一个可以在不同页面自定义NavigationBar样式，而且互相不影响"
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/SerilesJam/JCNavigationController"
-  s.screenshots  = "https://github.com/SerilesJam/JCNavigationController/blob/master/demo.gif"
+  #s.screenshots  = "https://github.com/SerilesJam/JCNavigationController/blob/master/demo.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -40,6 +40,6 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.subspec 'JCNavigationController' do |ss|
-    ss.source_files  = 'JCNavigationController/*'
+    ss.source_files  = '*'
   end
 end
