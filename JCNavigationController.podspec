@@ -40,6 +40,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = 'JCNavigationController/*.{h,m}'
-  s.resource      = 'JCNavigationController/JCNavigationController.bundle'
+  #s.resource      = 'JCNavigationController/JCNavigationController.bundle'
+  s.resource      = 'JCNavigationController/*.xcassets'
 
 end

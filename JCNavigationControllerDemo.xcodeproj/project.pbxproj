@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		39C7BB0E1D9D157700B7C026 /* JCNavigationControllerImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C7BB0D1D9D157700B7C026 /* JCNavigationControllerImage.xcassets */; };
-		39CD37001D9CAC090032AC0B /* JCNavigationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39CD36FF1D9CAC090032AC0B /* JCNavigationController.bundle */; };
 		39F45CBA1D9A23DC00642536 /* JCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */; };
 		39F45CBB1D9A23DC00642536 /* JCWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB41D9A23DC00642536 /* JCWrapNavigationController.m */; };
 		39F45CBC1D9A23DC00642536 /* JCWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB61D9A23DC00642536 /* JCWrapViewController.m */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		39C7BB0D1D9D157700B7C026 /* JCNavigationControllerImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JCNavigationControllerImage.xcassets; sourceTree = "<group>"; };
-		39CD36FF1D9CAC090032AC0B /* JCNavigationController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCNavigationController.bundle; sourceTree = "<group>"; };
 		39F45CB11D9A23DC00642536 /* JCNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationViewController.h; sourceTree = "<group>"; };
 		39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNavigationViewController.m; sourceTree = "<group>"; };
 		39F45CB31D9A23DC00642536 /* JCWrapNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapNavigationController.h; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				39C7BB0D1D9D157700B7C026 /* JCNavigationControllerImage.xcassets */,
-				39CD36FF1D9CAC090032AC0B /* JCNavigationController.bundle */,
 				39F45CB11D9A23DC00642536 /* JCNavigationViewController.h */,
 				39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */,
 				39F45CB31D9A23DC00642536 /* JCWrapNavigationController.h */,
@@ -181,7 +178,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39CD37001D9CAC090032AC0B /* JCNavigationController.bundle in Resources */,
 				EBDFEA381CAA575800B2CB2C /* LaunchScreen.storyboard in Resources */,
 				39C7BB0E1D9D157700B7C026 /* JCNavigationControllerImage.xcassets in Resources */,
 				EBDFEA351CAA575800B2CB2C /* Assets.xcassets in Resources */,
