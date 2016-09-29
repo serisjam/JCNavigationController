@@ -46,7 +46,12 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-    UIImage *backItemImage = [UIImage imageNamed:@"jcnavigationitem_back"];
+    NSBundle *bundle = [NSBundle bundleForClass:[JCNavigationViewController class]];
+    NSURL *url = [bundle URLForResource:@"JCNavigationController" withExtension:@"bundle"];
+    NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+    NSData *imageData = [NSData dataWithContentsOfFile:[imageBundle pathForResource:@"item_back" ofType:@"png"]];
+    UIImage *backItemImage = [UIImage imageWithData:imageData scale:2.0f];
+    
     viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backItemImage style:UIBarButtonItemStylePlain target:nil action:@selector(didTapBackButton)];
     
     [self.navigationController pushViewController:[JCWrapViewController wrapViewControllerWithRootController:viewController] animated:animated];

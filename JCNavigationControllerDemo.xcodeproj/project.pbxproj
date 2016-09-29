@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39F45CB91D9A23DC00642536 /* JCNavigationControllerImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F45CB01D9A23DC00642536 /* JCNavigationControllerImage.xcassets */; };
+		39CD37001D9CAC090032AC0B /* JCNavigationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39CD36FF1D9CAC090032AC0B /* JCNavigationController.bundle */; };
 		39F45CBA1D9A23DC00642536 /* JCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */; };
 		39F45CBB1D9A23DC00642536 /* JCWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB41D9A23DC00642536 /* JCWrapNavigationController.m */; };
 		39F45CBC1D9A23DC00642536 /* JCWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F45CB61D9A23DC00642536 /* JCWrapViewController.m */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39F45CB01D9A23DC00642536 /* JCNavigationControllerImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JCNavigationControllerImage.xcassets; sourceTree = "<group>"; };
+		39CD36FF1D9CAC090032AC0B /* JCNavigationController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCNavigationController.bundle; sourceTree = "<group>"; };
 		39F45CB11D9A23DC00642536 /* JCNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationViewController.h; sourceTree = "<group>"; };
 		39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNavigationViewController.m; sourceTree = "<group>"; };
 		39F45CB31D9A23DC00642536 /* JCWrapNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapNavigationController.h; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		39F45CAF1D9A23DC00642536 /* JCNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				39F45CB01D9A23DC00642536 /* JCNavigationControllerImage.xcassets */,
+				39CD36FF1D9CAC090032AC0B /* JCNavigationController.bundle */,
 				39F45CB11D9A23DC00642536 /* JCNavigationViewController.h */,
 				39F45CB21D9A23DC00642536 /* JCNavigationViewController.m */,
 				39F45CB31D9A23DC00642536 /* JCWrapNavigationController.h */,
@@ -151,6 +151,7 @@
 				TargetAttributes = {
 					EBDFEA241CAA575800B2CB2C = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RGDB7M59PE;
 					};
 				};
 			};
@@ -177,7 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39F45CB91D9A23DC00642536 /* JCNavigationControllerImage.xcassets in Resources */,
+				39CD37001D9CAC090032AC0B /* JCNavigationController.bundle in Resources */,
 				EBDFEA381CAA575800B2CB2C /* LaunchScreen.storyboard in Resources */,
 				EBDFEA351CAA575800B2CB2C /* Assets.xcassets in Resources */,
 				EBDFEA331CAA575800B2CB2C /* Main.storyboard in Resources */,
@@ -309,9 +310,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JCNavigationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lapelgroup.JCNavigationControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlingmao.jiuwei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -320,9 +323,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JCNavigationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lapelgroup.JCNavigationControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlingmao.jiuwei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
