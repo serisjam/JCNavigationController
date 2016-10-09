@@ -59,6 +59,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (!viewController.navigationItem.leftBarButtonItem && [self.viewControllers count] != 0) {
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"item_back"] style:UIBarButtonItemStylePlain target:nil action:@selector(didTapBackButton)];
+    }
+    viewController.jcNavigationController = self;
+    [super pushViewController:[JCWrapViewController wrapViewControllerWithRootController:viewController] animated:animated];
+}
+
+- (void)didTapBackButton {
+    [self popViewControllerAnimated:YES];
+}
+
 /*
 #pragma mark - Navigation
 

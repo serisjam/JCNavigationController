@@ -45,18 +45,9 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
-    if (!viewController.navigationItem.leftBarButtonItem) {
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"item_back"] style:UIBarButtonItemStylePlain target:nil action:@selector(didTapBackButton)];
-    }
-    
-    [self.navigationController pushViewController:[JCWrapViewController wrapViewControllerWithRootController:viewController] animated:animated];
-    viewController.jcNavigationController = (JCNavigationViewController *)self.navigationController;
+    [self.navigationController pushViewController:viewController animated:animated];
 }
 
-- (void)didTapBackButton {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 -(void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion{
     [self.navigationController dismissViewControllerAnimated:flag completion:completion];
