@@ -46,7 +46,9 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-    viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"item_back"] style:UIBarButtonItemStylePlain target:nil action:@selector(didTapBackButton)];
+    if (!viewController.navigationItem.leftBarButtonItem) {
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"item_back"] style:UIBarButtonItemStylePlain target:nil action:@selector(didTapBackButton)];
+    }
     
     [self.navigationController pushViewController:[JCWrapViewController wrapViewControllerWithRootController:viewController] animated:animated];
     viewController.jcNavigationController = (JCNavigationViewController *)self.navigationController;
