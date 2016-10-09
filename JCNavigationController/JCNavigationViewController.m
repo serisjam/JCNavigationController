@@ -72,7 +72,7 @@
 #pragma mark public method
 
 - (void)removeAtIndex:(NSInteger)index {
-    if (index < 1 || index > [self.viewControllers count]) {
+    if (index < 0 || index > [self.viewControllers count]) {
         return ;
     }
     NSMutableArray *viewControllers = [NSMutableArray arrayWithArray:self.viewControllers];
