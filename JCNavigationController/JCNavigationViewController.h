@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol JCNavigationControllerCustomBar <NSObject>
+
+- (Class)jcNavigationControllerCustomBar;
+
+@end
+
 @interface JCNavigationViewController : UINavigationController
 
 /**

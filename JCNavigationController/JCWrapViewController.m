@@ -8,6 +8,7 @@
 
 #import "JCWrapViewController.h"
 #import "JCWrapNavigationController.h"
+#import "JCNavigationViewController.h"
 
 @interface JCWrapViewController ()
 
@@ -15,9 +16,14 @@
 
 @implementation JCWrapViewController
 
-+ (JCWrapViewController *)wrapViewControllerWithRootController:(UIViewController *)rootViewController {
++ (JCWrapViewController *)wrapViewControllerWithRootController:(UIViewController<JCNavigationControllerCustomBar> *)rootViewController {
     
-    JCWrapNavigationController *wrapNavController = [[JCWrapNavigationController alloc] init];
+    JCWrapNavigationController *wrapNavController;
+    if ([rootViewController conformsToProtocol:@protocol(JCNavigationControllerCustomBar)]) {
+        wrapNavController = [[JCWrapNavigationController alloc] initWithNavigationBarClass:[rootViewController jcNavigationControllerCustomBar] toolbarClass:nil];
+    } else {
+        wrapNavController = [[JCWrapNavigationController alloc] init];
+    }
     wrapNavController.viewControllers = @[rootViewController];
     
     JCWrapViewController *wrapViewController = [[JCWrapViewController alloc] init];
