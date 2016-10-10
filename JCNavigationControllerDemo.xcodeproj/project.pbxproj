@@ -151,7 +151,7 @@
 				TargetAttributes = {
 					EBDFEA241CAA575800B2CB2C = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = RGDB7M59PE;
+						DevelopmentTeam = 7TVSQH639C;
 					};
 				};
 			};
@@ -314,7 +314,7 @@
 				INFOPLIST_FILE = JCNavigationControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xlingmao.jiuwei;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jam.JCNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -327,7 +327,7 @@
 				INFOPLIST_FILE = JCNavigationControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xlingmao.jiuwei;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jam.JCNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
