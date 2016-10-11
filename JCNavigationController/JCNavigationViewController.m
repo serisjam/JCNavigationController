@@ -24,9 +24,8 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         UIViewController *controller = self.viewControllers.firstObject;
-        controller.jcNavigationController = self;
-        JCWrapViewController *wrapViewController = [JCWrapViewController wrapViewControllerWithRootController:controller];
-        self.viewControllers = @[wrapViewController];
+        self.viewControllers = @[];
+        [self pushViewController:controller animated:NO];
     }
     
     return self;
