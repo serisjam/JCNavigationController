@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "JCNavigationController"
-  s.version      = "1.0.6"
+  s.version      = "1.0.8"
   s.summary      = "JCNavigationConroller是一个可以在不同页面自定义NavigationBar样式，而且互相不影响"
 
   s.description  = <<-DESC
