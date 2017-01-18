@@ -66,6 +66,22 @@
     [super pushViewController:[JCWrapViewController wrapViewControllerWithRootController:viewController] animated:animated];
 }
 
+- (void)setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated {
+    NSMutableArray *controllers = [NSMutableArray arrayWithCapacity:[viewControllers count]];
+    for (UIViewController *controller in viewControllers) {
+        if ([controller isKindOfClass:[JCWrapViewController class]]) {
+            [controllers addObject:controller];
+        } else {
+            if ([viewControllers indexOfObject:controller] != 0) {
+                controller.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"item_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:nil action:@selector(didTapBackButton)];
+            }
+            controller.jcNavigationController = self;
+            [controllers addObject:[JCWrapViewController wrapViewControllerWithRootController:controller]];
+        }
+    }
+    [super setViewControllers:controllers animated:animated];
+}
+
 - (void)didTapBackButton {
     [self popViewControllerAnimated:YES];
 }
