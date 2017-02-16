@@ -33,6 +33,16 @@
     return wrapViewController;
 }
 
+-(UIViewController *)currentViewController:(JCWrapViewController *)wrapViewController
+{
+    if (wrapViewController.childViewControllers.count <= 0) return wrapViewController;
+    UIViewController *vc = wrapViewController.childViewControllers[0];
+    if ([vc isKindOfClass:[JCWrapNavigationController class]]) {
+        return ((JCWrapNavigationController *)vc).viewControllers.firstObject;
+    }
+    return wrapViewController;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
