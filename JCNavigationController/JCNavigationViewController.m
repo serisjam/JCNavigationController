@@ -11,7 +11,7 @@
 
 #import "UIViewController+JCNavigationControllerExtension.h"
 
-@interface JCNavigationViewController () <UINavigationControllerDelegate>
+@interface JCNavigationViewController () <UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIPanGestureRecognizer *popPanGesture;
 
@@ -45,11 +45,14 @@
     // Do any additional setup after loading the view.
     [self setNavigationBarHidden:YES];
     
-    self.delegate = self;
+    self.interactivePopGestureRecognizer.enabled = NO;
     self.popGestureDelegate = self.interactivePopGestureRecognizer.delegate;
     SEL action = NSSelectorFromString(@"handleNavigationTransition:");
     self.popPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self.popGestureDelegate action:action];
     self.popPanGesture.maximumNumberOfTouches = 1;
+    self.popPanGesture.delegate = self;
+    
+    [self.view addGestureRecognizer:self.popPanGesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,15 +112,15 @@
 
 #pragma mark - UINavigationControllerDelegate
 
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer; {
     
-    if (viewController == navigationController.viewControllers.firstObject) {
-        [self.view removeGestureRecognizer:self.popPanGesture];
-    } else {
-        [self.view addGestureRecognizer:self.popPanGesture];
+    // Prevent calling the handler when the gesture begins in an opposite direction.
+    CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
+    if (translation.x <= 0) {
+        return NO;
     }
-    self.interactivePopGestureRecognizer.delegate = self.popGestureDelegate;
-    self.interactivePopGestureRecognizer.enabled = NO;
+    
+    return self.childViewControllers.count > 1;
 }
 
 @end
